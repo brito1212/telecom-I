@@ -2,17 +2,17 @@ clear all;
 close all;
 clc;
 
-amostra = 10000000;
+amostra = 1000000;
 t = 0.15 : 1/amostra : 1;
 
 A = 1;
 xt = sin(2*pi*25*t);
 ct = cos(2*pi*250*t);
-m = 0.3;
+m = 1.0;
 
 
-st = xt.*ct;
-
+st = A*(1 + m*xt).*ct;
+st2 = xt.*ct;
 
 
 figure;
@@ -29,14 +29,16 @@ ylabel("cos(25Hz * t)");
 
 figure;
 plot(t, st);
-title("Sinal Modulado s(t) sem portadora");
+title("Sinal Modulado s(t) para m = 0.3");
 xlabel("t");
 ylabel("s(t)");
 
-St = fft(st);
+f = linspace(-250, 250, 850001);
+ff = fft(st2);
+ffs = fftshift(ff);
 
 figure;
-plot(t, St);
+plot(f, abs(ffs));
 title("Espectro de s(t) sem portadora");
 xlabel("t");
 ylabel("s(t)");
