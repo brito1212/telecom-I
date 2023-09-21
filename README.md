@@ -25,6 +25,13 @@ Description: This lab covers frequency and phase modulation, its advantages, and
 - Folder: `Lab3`
 - Files: `lab03.m`
 
+### Lab Activity 4: Multiplexing
+
+Description: This lab covers ultiplexing, developing a FDM(Frquency Division Multiplexing) with FM and AM signals.
+
+- Folder: `Lab4`
+- Files: `lab4.m`
+
 ## How to Use
 
 1. Clone the repository to your local machine using the following command:
