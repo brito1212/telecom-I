@@ -20,6 +20,7 @@ mt = 2*cos(2*pi*fm*t);
 PM = Ac*cos(2*pi*fc*t + Kp*mt);
 
 int_mt = (1/(2*pi*fm))*sin(2*pi*fm*t);
+
 FM = Ac*cos(2*pi*fc*t + Kf*int_mt);
 
 AM_dsb = Ac*cos(2*pi*fc*t) + mt.*cos(2*pi*fc*t);
