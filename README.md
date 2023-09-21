@@ -18,12 +18,12 @@ Description: In this lab activity, you'll explore amplitude modulation, its char
 - Folder: `Lab2`
 - Files: `lab2.m`
 
-### Lab Activity 3: Frequency Modulation (FM)
+### Lab Activity 3: Angle Modulation (PM and FM)
 
-Description: This lab covers frequency modulation, its advantages, and techniques for both modulation and demodulation.
+Description: This lab covers frequency and phase modulation, its advantages, and techniques for both modulation and demodulation.
 
-- Folder: `Lab_Activity_3_Frequency_Modulation`
-- Files: `fm_modulation.m`, `fm_demodulation.m`
+- Folder: `Lab3`
+- Files: `lab03.m`
 
 ## How to Use
 
